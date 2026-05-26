@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CloudFellows is een onafhankelijk security consultancybureau gericht op structuur, governance en beheersbaarheid.">
+<title>Over ons CloudFellows</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">CloudFellows</a>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="diensten.html">Diensten</a>
+      <a href="aanpak.html">Aanpak</a>
+      <a href="over-ons.html" class="active">Over ons</a>
+    </div>
+    <a class="btn" href="contact.html">Contact</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="section-label reveal">Over CloudFellows</div>
+    <h1 class="reveal">Security consultancy<br>zonder omwegen</h1>
+    <p class="reveal">We helpen organisaties grip te krijgen op hun security. Niet met uitgebreide rapporten, maar met een aanpak die in de praktijk werkt.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="highlight-row">
+      <div class="reveal">
+        <div class="section-label">Wie we zijn</div>
+        <h2>Opgericht vanuit de praktijk</h2>
+        <p class="text">CloudFellows is ontstaan vanuit een herkenbare observatie: veel organisaties investeren in security, maar hebben geen goed beeld van wat dat oplevert en waar de kwetsbaarheden zitten.</p>
+        <p class="text">We zijn een klein, gespecialiseerd team met diepgaande kennis van de Microsoft-stack. Geen groot bureau met generalisten, maar consultants die dagelijks werken met de omgevingen die ze adviseren.</p>
+        <p class="text">Onze focus ligt op het MKB en organisaties die groeien of veranderen waarbij security mee moet zonder de organisatie te vertragen.</p>
+      </div>
+      <div class="reveal">
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-label">Werkgebied</div>
+          <div class="card-title">Actief door heel Nederland</div>
+          <div class="card-text">We werken zowel op locatie als remote, afhankelijk van wat het beste past bij uw situatie en team.</div>
+        </div>
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-label">Focus</div>
+          <div class="card-title">Microsoft 365 & Azure</div>
+          <div class="card-text">Entra ID, Intune, Purview en Defender. De platformen die het merendeel van het MKB dagelijks gebruikt.</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Aanpak</div>
+          <div class="card-title">Hands-on en overdraagbaar</div>
+          <div class="card-text">We implementeren niet alleen. We zorgen dat uw eigen team daarna in control is.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-label reveal">Onze visie</div>
+    <h2 class="reveal">Security is samenhang</h2>
+    <p class="section-intro reveal">Afzonderlijke tools lossen afzonderlijke problemen op. Maar echte grip op security ontstaat alleen als identiteit, devices en data als één geheel worden ingericht en beheerd.</p>
+
+    <div class="grid reveal">
+      <div class="card">
+        <span class="card-icon">🔗</span>
+        <div class="card-title">Samenhang boven tools</div>
+        <div class="card-text">De kracht van een security-omgeving zit niet in het aantal tools, maar in hoe ze op elkaar aansluiten. Wij richten dat geheel in.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">📖</span>
+        <div class="card-title">Begrijpelijkheid als uitgangspunt</div>
+        <div class="card-text">Als een beheerder niet begrijpt waarom iets zo is ingericht, is de kans groot dat het fout gaat bij de eerste wijziging. Wij maken keuzes transparant.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">📈</span>
+        <div class="card-title">Security als enabler</div>
+        <div class="card-text">Goed ingericht security hoeft geen rem te zijn. Het geeft de ruimte om veilig te groeien en veranderen, met vertrouwen in de fundering.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="cta">
+  <div class="wrap reveal">
+    <h2>Kennismaken?</h2>
+    <p>Een gesprek van 30 minuten om te bekijken of en hoe we u kunnen helpen. Geen verplichtingen.</p>
+    <div class="cta-actions">
+      <a class="btn big" href="contact.html">Neem contact op</a>
+      <a class="btn-ghost big" href="aanpak.html">Hoe we werken</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <span class="footer-logo">CloudFellows</span>
+      <div class="footer-links">
+        <a href="diensten.html">Diensten</a>
+        <a href="aanpak.html">Aanpak</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <span class="footer-copy">© 2025 CloudFellows</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

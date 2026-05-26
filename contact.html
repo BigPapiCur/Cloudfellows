@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Neem contact op met CloudFellows voor een vrijblijvend kennismakingsgesprek.">
+<title>Contact CloudFellows</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">CloudFellows</a>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="diensten.html">Diensten</a>
+      <a href="aanpak.html">Aanpak</a>
+      <a href="over-ons.html">Over ons</a>
+    </div>
+    <a class="btn" href="contact.html">Contact</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="section-label reveal">Contact</div>
+    <h1 class="reveal">Neem contact op</h1>
+    <p class="reveal">Een kennismakingsgesprek duurt 30 minuten en is geheel vrijblijvend. Vul het formulier in en we reageren binnen één werkdag.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="wrap">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+
+      <div class="form-wrap reveal">
+        <form action="https://formspree.io/f/YOUR_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="voornaam">Voornaam</label>
+              <input type="text" id="voornaam" name="voornaam" placeholder="Jan" required>
+            </div>
+            <div class="form-group">
+              <label for="achternaam">Achternaam</label>
+              <input type="text" id="achternaam" name="achternaam" placeholder="de Vries" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="jan@bedrijf.nl" required>
+          </div>
+          <div class="form-group">
+            <label for="organisatie">Organisatie</label>
+            <input type="text" id="organisatie" name="organisatie" placeholder="Naam van uw organisatie">
+          </div>
+          <div class="form-group">
+            <label for="onderwerp">Onderwerp</label>
+            <input type="text" id="onderwerp" name="onderwerp" placeholder="Waar gaat uw vraag over?">
+          </div>
+          <div class="form-group">
+            <label for="bericht">Toelichting</label>
+            <textarea id="bericht" name="bericht" placeholder="Beschrijf kort uw situatie of vraag. Wat speelt er? Wat wilt u bereiken?"></textarea>
+          </div>
+          <button type="submit" class="btn big" style="width: 100%; text-align: center; margin-top: 4px;">Verstuur bericht</button>
+        </form>
+      </div>
+
+      <div class="reveal" style="padding-top: 8px;">
+        <div class="card" style="margin-bottom: 20px;">
+          <span class="card-icon">☎️</span>
+          <div class="card-label">Liever direct contact?</div>
+          <div class="card-title">Plan een belafspraak</div>
+          <div class="card-text">Stuur een e-mail naar <strong style="color: #e2e8f0;">info@cloudfellows.nl</strong> met uw beschikbaarheid. We bellen u terug binnen één werkdag.</div>
+        </div>
+        <div class="card" style="margin-bottom: 20px;">
+          <span class="card-icon">🇳🇱</span>
+          <div class="card-label">Werkgebied</div>
+          <div class="card-title">Actief door heel Nederland</div>
+          <div class="card-text">We werken zowel op locatie als remote, waar het voor u het beste uitkomt. Een eerste gesprek doen we altijd online.</div>
+        </div>
+        <div class="card">
+          <span class="card-icon">⏱️</span>
+          <div class="card-label">Wat u kunt verwachten</div>
+          <div class="card-title">Reactie binnen één werkdag</div>
+          <div class="card-text">Na uw bericht plannen we een kennismakingsgesprek van 30 minuten in. We luisteren, stellen vragen en geven eerlijk aan of en hoe we kunnen helpen.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <span class="footer-logo">CloudFellows</span>
+      <div class="footer-links">
+        <a href="diensten.html">Diensten</a>
+        <a href="aanpak.html">Aanpak</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <span class="footer-copy">© 2025 CloudFellows</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
