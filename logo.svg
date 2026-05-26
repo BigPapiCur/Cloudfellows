@@ -1,0 +1,16 @@
+<svg width="320" height="80" viewBox="0 0 320 80" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>CloudFellows logo</title>
+<desc>CloudFellows logo met slot-icoon en tweekleurige tekst</desc>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
+  .logo-text { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 28px; }
+</style>
+<rect x="0" y="10" width="56" height="56" rx="13" fill="#1a3a5c" stroke="#2a5a8c" stroke-width="0.5"/>
+<rect x="14" y="36" width="28" height="20" rx="4" fill="#3b82f6"/>
+<path d="M18 36 L18 28 Q18 20 28 20 Q38 20 38 28 L38 36" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="25" y="42" width="6" height="8" rx="3" fill="#1a3a5c"/>
+<circle cx="28" cy="44" r="2.5" fill="#93c5fd"/>
+<text x="68" y="46" class="logo-text" fill="#3b82f6">Cloud</text>
+<text x="163" y="46" class="logo-text" fill="#ffffff">Fellows</text>
+<text x="69" y="60" font-family="Inter, sans-serif" font-size="10" font-weight="400" fill="#4a7fa8" letter-spacing="2.5">VERTROUWD IN DE CLOUD</text>
+</svg>

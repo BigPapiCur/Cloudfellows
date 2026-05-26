@@ -41,11 +41,9 @@ header {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.5px;
   text-decoration: none;
-  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -55,10 +53,10 @@ header {
 }
 
 .menu a {
-  padding: 6px 14px;
+  padding: 7px 16px;
   color: #cbd5e1;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   border-radius: 6px;
   transition: all 0.2s;
 }
