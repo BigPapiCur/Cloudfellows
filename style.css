@@ -576,10 +576,18 @@ footer {
 }
 @media (max-width: 768px) {
   .menu { display: none; }
-  .lang-switch { display: none !important; }
 
   .nav {
     padding: 12px 0;
+  }
+
+  /* Compact lang switch on mobile */
+  .lang-switch {
+    margin-right: 6px !important;
+  }
+  .lang-switch a.lang-btn {
+    padding: 4px 8px !important;
+    font-size: 11px !important;
   }
 
   /* Shrink logo on mobile */
