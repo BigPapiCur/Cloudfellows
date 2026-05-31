@@ -19,6 +19,10 @@
       <a href="aanpak.html">Aanpak</a>
       <a href="over-ons.html">Over ons</a>
     </div>
+    <div class="lang-switch" style="display:flex;align-items:center;gap:2px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:3px;margin-right:10px;">
+      <a href="contact.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:#3b82f6;color:#fff;">NL</a>
+      <a href="contact-en.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:transparent;color:#94a3b8;">EN</a>
+    </div>
     <a class="btn" href="contact.html">Contact</a>
   </div>
 </header>
@@ -27,7 +31,7 @@
   <div class="wrap">
     <div class="section-label reveal">Contact</div>
     <h1 class="reveal">Neem contact op</h1>
-    <p class="reveal">Vul het formulier in en we nemen zo snel mogelijk contact met u op voor een vrijblijvend kennismakingsgesprek.</p>
+    <p class="reveal">Stuur een bericht met uw beschikbaarheid en we plannen zo snel mogelijk een vrijblijvend kennismakingsgesprek in.</p>
   </div>
 </section>
 
@@ -35,7 +39,7 @@
 
 <section class="section">
   <div class="wrap">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:stretch;">
 
       <div class="form-wrap reveal">
         <form action="https://formspree.io/f/xnjroqqg" method="POST">
@@ -65,31 +69,40 @@
             <label for="bericht">Toelichting</label>
             <textarea id="bericht" name="bericht" placeholder="Beschrijf kort uw situatie of vraag. Wat speelt er? Wat wilt u bereiken?"></textarea>
           </div>
-          <button type="submit" class="btn big" style="width: 100%; text-align: center; margin-top: 4px;">Verstuur bericht</button>
+          <button type="submit" class="btn big" style="width:100%;text-align:center;margin-top:4px;">Verstuur bericht</button>
         </form>
       </div>
 
-      <div class="reveal" style="padding-top: 8px;">
-        <div class="card" style="margin-bottom: 20px;">
-          <span class="card-icon">☎️</span>
-          <div class="card-label">Liever direct contact?</div>
-          <div class="card-title">Plan een belafspraak</div>
-          <div class="card-text">Stuur een e-mail naar <strong style="color: #e2e8f0;">info@cloudfellows.nl</strong> met uw beschikbaarheid. We nemen zo snel mogelijk contact met u op.</div>
-        </div>
-        <div class="card" style="margin-bottom: 20px;">
-          <span class="card-icon">🇳🇱</span>
-          <div class="card-label">Werkgebied</div>
-          <div class="card-title">Actief door heel Nederland</div>
-          <div class="card-text">We werken zowel op locatie als remote, waar het voor u het beste uitkomt. Een eerste gesprek doen we altijd online.</div>
-        </div>
-        <div class="card">
-          <span class="card-icon">⏱️</span>
-          <div class="card-label">Wat u kunt verwachten</div>
-          <div class="card-title">Snel contact</div>
-          <div class="card-text">Na uw bericht nemen we zo snel mogelijk contact op om een kennismakingsgesprek in te plannen. We luisteren, stellen vragen en geven eerlijk aan of en hoe we kunnen helpen.</div>
-        </div>
-      </div>
+            <div class="reveal" style="display:flex;flex-direction:column;gap:14px;padding-top:8px;">
 
+        <div class="card" style="padding:20px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="font-size:20px;">📅</span>
+            <div class="card-label" style="margin-bottom:0;">Plan een belafspraak</div>
+          </div>
+          <div class="card-title" style="font-size:16px;margin-bottom:6px;">Stuur ons een bericht</div>
+          <div class="card-text">Stuur een bericht met uw beschikbaarheid via het formulier. We nemen zo snel mogelijk contact op om een moment in te plannen.</div>
+        </div>
+
+        <div class="card" style="padding:20px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="font-size:20px;">🇳🇱</span>
+            <div class="card-label" style="margin-bottom:0;">Werkgebied</div>
+          </div>
+          <div class="card-title" style="font-size:16px;margin-bottom:6px;">Actief door heel Nederland</div>
+          <div class="card-text">We werken zowel op locatie als remote. Een eerste gesprek doen we altijd online.</div>
+        </div>
+
+        <div class="card" style="padding:20px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="font-size:20px;">⏱️</span>
+            <div class="card-label" style="margin-bottom:0;">Wat u kunt verwachten</div>
+          </div>
+          <div class="card-title" style="font-size:16px;margin-bottom:6px;">Snel contact</div>
+          <div class="card-text">Na uw bericht nemen we zo snel mogelijk contact op. We luisteren, stellen vragen en geven eerlijk aan of en hoe we kunnen helpen.</div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>

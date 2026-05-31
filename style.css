@@ -270,6 +270,9 @@ header {
   text-transform: uppercase;
   color: #3b82f6;
   margin-bottom: 10px;
+  min-height: 32px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .card-title {
