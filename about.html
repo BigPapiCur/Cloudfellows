@@ -30,8 +30,18 @@
       <a href="about.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:#3b82f6;color:#fff;">EN</a>
     </div>
     <a class="btn" href="contact-en.html">Contact</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="index-en.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="approach.html">Approach</a>
+      <a href="about.html">About us</a>
+      <a href="contact-en.html">Contact</a>
+    </nav>
 
 <section class="page-hero">
   <div class="wrap">
@@ -138,5 +148,20 @@ const obs = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
 <a href="contact-en.html" class="mobile-contact-btn" style="display:none;">Contact</a>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const btn = document.querySelector('.hamburger');
+  menu.classList.toggle('open');
+  btn.classList.toggle('active');
+}
+// Close menu when clicking a link
+document.querySelectorAll('.mobile-menu a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.querySelector('.hamburger').classList.remove('active');
+  });
+});
+</script>
 </body>
 </html>
