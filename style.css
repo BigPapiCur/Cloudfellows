@@ -577,18 +577,41 @@ footer {
 @media (max-width: 768px) {
   .menu { display: none; }
 
+  /* Hide Contact button in nav on mobile */
+  .nav > .btn { display: none; }
+
   .nav {
     padding: 12px 0;
+    gap: 8px;
   }
 
   /* Compact lang switch on mobile */
   .lang-switch {
-    margin-right: 6px !important;
+    margin-right: 0 !important;
   }
   .lang-switch a.lang-btn {
-    padding: 4px 8px !important;
-    font-size: 11px !important;
+    padding: 5px 10px !important;
+    font-size: 12px !important;
   }
+
+  /* Floating contact button bottom right */
+  .mobile-contact-btn {
+    display: flex !important;
+    position: fixed;
+    bottom: 24px;
+    right: 20px;
+    z-index: 999;
+    background: #3b82f6;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(59,130,246,0.5);
+  }
+}
 
   /* Shrink logo on mobile */
   .logo {
