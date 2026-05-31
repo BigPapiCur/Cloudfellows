@@ -261,6 +261,8 @@ header {
   font-size: 28px;
   margin-bottom: 16px;
   display: block;
+  height: 40px;
+  line-height: 40px;
 }
 
 .card-label {
@@ -270,9 +272,19 @@ header {
   text-transform: uppercase;
   color: #3b82f6;
   margin-bottom: 10px;
-  min-height: 32px;
+  min-height: 48px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #f1f5f9;
+  min-height: 56px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .card-title {
@@ -550,45 +562,61 @@ footer {
 
 /* ─── MOBILE ─────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  /* Header */
   .menu { display: none; }
   .lang-switch { display: none !important; }
 
   .nav {
-    padding: 14px 0;
-    justify-content: space-between;
+    padding: 12px 0;
   }
 
-  /* Logo smaller on mobile */
+  /* Shrink logo on mobile */
+  .logo {
+    gap: 8px !important;
+  }
   .logo > div:first-child {
-    width: 44px !important;
-    height: 44px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 10px !important;
+    flex-shrink: 0 !important;
   }
-
-  .logo span[style] {
-    font-size: 18px !important;
+  .logo > div:first-child svg {
+    width: 20px !important;
+    height: 22px !important;
+  }
+  .logo > div:last-child span:first-child {
+    font-size: 16px !important;
+  }
+  .logo > div:last-child span:last-child {
+    font-size: 8px !important;
+    letter-spacing: 1.5px !important;
+    margin-top: 3px !important;
+    display: none !important;
   }
 
   /* Hero */
   .hero {
-    padding-top: 90px;
-    padding-bottom: 48px;
+    padding-top: 80px;
+    padding-bottom: 40px;
     min-height: auto;
   }
-
-  .hero h1 { font-size: 32px; }
+  .hero h1 { font-size: 30px; }
   .hero p { font-size: 15px; }
-  .hero-actions { flex-direction: column; align-items: stretch; }
-  .hero-actions .btn, .hero-actions .btn-ghost { text-align: center; }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-actions a {
+    text-align: center;
+  }
 
   /* Sections */
-  .section { padding: 60px 0; }
+  .section { padding: 56px 0; }
   .section h2 { font-size: 24px; }
-  .section-intro { font-size: 15px; }
+  .section-intro { font-size: 15px; margin-bottom: 32px; }
 
-  /* Grids */
-  .grid { grid-template-columns: 1fr; }
-  .grid2 { grid-template-columns: 1fr; }
+  /* Grids single column */
+  .grid,
+  .grid2,
   .grid4 { grid-template-columns: 1fr; }
 
   /* Highlight row */
@@ -606,19 +634,16 @@ footer {
   /* Stats */
   .stat-grid { grid-template-columns: 1fr; }
 
-  /* Contact form */
-  .wrap > div[style*="grid-template-columns: 1fr 1fr"] {
-    grid-template-columns: 1fr !important;
-    gap: 32px !important;
-  }
-
   /* Page hero */
-  .page-hero { padding: 100px 0 40px; }
+  .page-hero { padding: 90px 0 36px; }
   .page-hero h1 { font-size: 28px; }
 
   /* CTA */
-  .cta-actions { flex-direction: column; align-items: stretch; }
-  .cta-actions .btn, .cta-actions .btn-ghost { text-align: center; }
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-actions a { text-align: center; }
 
   /* Footer */
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
