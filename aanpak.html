@@ -29,18 +29,8 @@
       <a href="aanpak.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:#3b82f6;color:#fff;">NL</a>
       <a href="approach.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:transparent;color:#94a3b8;">EN</a>
     </div>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
     <a class="btn" href="contact.html">Contact</a>
   </div>
-  <nav class="mobile-menu" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="diensten.html">Diensten</a>
-      <a href="aanpak.html">Aanpak</a>
-      <a href="over-ons.html">Over ons</a>
-      <a href="contact.html">Contact</a>
-    </nav>
 </header>
 
 <section class="page-hero">
@@ -155,22 +145,6 @@ const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-</script>
-<a href="contact.html" class="mobile-contact-btn" style="display:none;">Contact</a>
-<script>
-function toggleMenu() {
-  const menu = document.getElementById('mobileMenu');
-  const btn = document.querySelector('.hamburger');
-  menu.classList.toggle('open');
-  btn.classList.toggle('active');
-}
-// Close menu when clicking a link
-document.querySelectorAll('.mobile-menu a').forEach(a => {
-  a.addEventListener('click', () => {
-    document.getElementById('mobileMenu').classList.remove('open');
-    document.querySelector('.hamburger').classList.remove('active');
-  });
-});
 </script>
 </body>
 </html>

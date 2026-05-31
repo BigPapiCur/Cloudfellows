@@ -28,18 +28,8 @@
       <a href="bedankt.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:transparent;color:#94a3b8;">NL</a>
       <a href="thank-you.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:#3b82f6;color:#fff;">EN</a>
     </div>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
     <a class="btn" href="contact-en.html">Contact</a>
   </div>
-  <nav class="mobile-menu" id="mobileMenu">
-      <a href="index-en.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="approach.html">Approach</a>
-      <a href="about.html">About us</a>
-      <a href="contact-en.html">Contact</a>
-    </nav>
 </header>
 
 <section style="min-height: 80vh; display: flex; align-items: center; padding-top: 100px;">
@@ -69,21 +59,5 @@
     </div>
   </div>
 </footer>
-<a href="contact-en.html" class="mobile-contact-btn" style="display:none;">Contact</a>
-<script>
-function toggleMenu() {
-  const menu = document.getElementById('mobileMenu');
-  const btn = document.querySelector('.hamburger');
-  menu.classList.toggle('open');
-  btn.classList.toggle('active');
-}
-// Close menu when clicking a link
-document.querySelectorAll('.mobile-menu a').forEach(a => {
-  a.addEventListener('click', () => {
-    document.getElementById('mobileMenu').classList.remove('open');
-    document.querySelector('.hamburger').classList.remove('active');
-  });
-});
-</script>
 </body>
 </html>
