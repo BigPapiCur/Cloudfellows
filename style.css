@@ -564,10 +564,15 @@ footer {
 .logo span[style*="color:#ffffff"],
 .logo span[style*="color: #ffffff"] {
   color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 .logo span[style*="color:#3b82f6"],
 .logo span[style*="color: #3b82f6"] {
   color: #3b82f6 !important;
+  -webkit-text-fill-color: #3b82f6 !important;
+}
+.logo a, .logo span {
+  color: #ffffff !important;
 }
 @media (max-width: 768px) {
   .menu { display: none; }
