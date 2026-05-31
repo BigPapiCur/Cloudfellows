@@ -560,7 +560,15 @@ footer {
   transform: translateY(0);
 }
 
-/* ─── MOBILE ─────────────────────────────────────────────── */
+/* Force logo text colors on all browsers */
+.logo span[style*="color:#ffffff"],
+.logo span[style*="color: #ffffff"] {
+  color: #ffffff !important;
+}
+.logo span[style*="color:#3b82f6"],
+.logo span[style*="color: #3b82f6"] {
+  color: #3b82f6 !important;
+}
 @media (max-width: 768px) {
   .menu { display: none; }
   .lang-switch { display: none !important; }
