@@ -30,8 +30,16 @@
       <a href="index-en.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:#3b82f6;color:#fff;">EN</a>
     </div>
     <a class="btn" href="contact-en.html">Contact</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index-en.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="approach.html">Approach</a>
+  <a href="about.html">About us</a>
+  <a href="contact-en.html">Contact</a>
+</nav>
 
 <section class="hero">
   <div class="wrap">
@@ -172,11 +180,29 @@
   </div>
 </footer>
 
+
+<a href="contact-en.html" class="fab-contact">Contact</a>
 <script>
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+if (hamburger && mobileNav) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+  });
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    });
+  });
+}
 </script>
 </body>
 </html>
