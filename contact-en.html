@@ -6,125 +6,79 @@
 <meta name="description" content="Get in touch with CloudFellows for a no-obligation introductory call.">
 <title>Contact CloudFellows</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-
-<header>
+<body><header>
   <div class="wrap nav">
-    <a class="logo" href="index-en.html" style="display:inline-flex;align-items:center;gap:14px;text-decoration:none;"><div style="width:60px;height:60px;background:#1a3a5c;border:1px solid #2a5a8c;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="28" height="30" viewBox="0 0 28 30" xmlns="http://www.w3.org/2000/svg"><path d="M7 14 Q7 3 14 3 Q21 3 21 14" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/><rect x="3" y="15" width="22" height="13" rx="4" fill="#3b82f6"/><circle cx="14" cy="21" r="3" fill="#1a3a5c"/><rect x="12.5" y="22" width="3" height="4" rx="1.5" fill="#1a3a5c"/></svg></div><div style="display:flex;flex-direction:column;align-items:flex-start;"><svg width="180" height="28" viewBox="0 0 180 28" xmlns="http://www.w3.org/2000/svg">
-  <text y="22" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="22" letter-spacing="-0.3">
-    <tspan fill="#3b82f6">Cloud</tspan><tspan fill="#ffffff">Fellows</tspan>
-  </text>
-</svg><svg width="160" height="14" viewBox="0 0 160 14" xmlns="http://www.w3.org/2000/svg">
-  <text y="11" font-family="Inter,Arial,sans-serif" font-weight="500" font-size="9" letter-spacing="2" fill="#4a7fa8">RELIABLY IN THE CLOUD</text>
-</svg></div></a>
+    <a class="logo" href="index-en.html" style="display:inline-flex;align-items:center;text-decoration:none;"><img src="logo-shield-final.png" alt="CloudFellows" style="height:80px;width:auto;"></a>
     <div class="menu">
       <a href="index-en.html">Home</a>
       <a href="services.html">Services</a>
       <a href="approach.html">Approach</a>
       <a href="about.html">About us</a>
     </div>
-    <div class="lang-switch" style="display:flex;align-items:center;gap:2px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:3px;margin-right:10px;">
+    <div class="lang-switch" style="display:flex;align-items:center;gap:2px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:3px;margin-right:10px;">
       <a href="contact.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:transparent;color:#94a3b8;">NL</a>
       <a href="contact-en.html" class="lang-btn" style="padding:5px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;background:#3b82f6;color:#fff;">EN</a>
     </div>
     <a class="btn" href="contact-en.html">Contact</a>
     <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
-</header>
-<nav class="mobile-nav" id="mobileNav">
+</header><nav class="mobile-nav" id="mobileNav">
   <a href="index-en.html">Home</a>
   <a href="services.html">Services</a>
   <a href="approach.html">Approach</a>
   <a href="about.html">About us</a>
   <a href="contact-en.html">Contact</a>
 </nav>
-
 <section class="page-hero">
   <div class="wrap">
-    <div class="section-label reveal">Contact</div>
+    <div class="hero-eyebrow reveal"><div class="hero-eyebrow-dot"></div><span>Contact</span></div>
     <h1 class="reveal">Get in touch</h1>
-    <p class="reveal">Send a message with your availability and we'll schedule a no-obligation introductory call as soon as possible.</p>
+    <p class="reveal">Send a message with your availability and we&#39;ll schedule a no-obligation introductory call as soon as possible.</p>
   </div>
 </section>
-
 <div class="divider"></div>
-
 <section class="section">
   <div class="wrap">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:stretch;">
-
-      <div class="form-wrap reveal">
+      <div class="reveal">
         <form action="https://formspree.io/f/xnjroqqg" method="POST">
           <div class="form-row">
-            <div class="form-group">
-              <label for="firstname">First name</label>
-              <input type="text" id="firstname" name="firstname" placeholder="John" required>
-            </div>
-            <div class="form-group">
-              <label for="lastname">Last name</label>
-              <input type="text" id="lastname" name="lastname" placeholder="Smith" required>
-            </div>
+            <div class="form-group"><label for="firstname">First name</label><input type="text" id="firstname" name="firstname" placeholder="John" required></div>
+            <div class="form-group"><label for="lastname">Last name</label><input type="text" id="lastname" name="lastname" placeholder="Smith" required></div>
           </div>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="john@company.com" required>
-          </div>
-          <div class="form-group">
-            <label for="organization">Organization</label>
-            <input type="text" id="organization" name="organization" placeholder="Name of your organization">
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="What's your question about?">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Briefly describe your situation or question."></textarea>
-          </div>
-          <button type="submit" class="btn big" style="width:100%;text-align:center;margin-top:4px;">Send message</button>
+          <div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="john@company.com" required></div>
+          <div class="form-group"><label for="organization">Organization</label><input type="text" id="organization" name="organization" placeholder="Name of your organization"></div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="What&#39;s your question about?"></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Briefly describe your situation or question."></textarea></div>
+          <button type="submit" class="btn big" style="width:100%;text-align:center;">Send message</button>
         </form>
       </div>
-
-            <div class="reveal" style="display:flex;flex-direction:column;gap:14px;padding-top:8px;">
-
-        <div class="card" style="padding:20px;">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
-            <span style="font-size:20px;">📅</span>
-            <div class="card-label" style="margin-bottom:0;">Schedule a call</div>
-          </div>
-          <div class="card-title" style="font-size:16px;margin-bottom:6px;">Send us a message</div>
-          <div class="card-text">Send a message with your availability using the form. We'll get back to you as soon as possible to schedule a time that works for you.</div>
+      <div class="reveal">
+        <div class="card" style="padding:20px;margin-bottom:14px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="font-size:20px;">📅</span><div class="card-label" style="min-height:auto;margin-bottom:0;">Schedule a call</div></div>
+          <div class="card-title" style="min-height:auto;font-size:16px;margin-bottom:6px;">Send us a message</div>
+          <div class="card-text">Send a message with your availability using the form. We&#39;ll get back to you as soon as possible to schedule a time.</div>
         </div>
-
-        <div class="card" style="padding:20px;">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
-            <span style="font-size:20px;">🇳🇱</span>
-            <div class="card-label" style="margin-bottom:0;">Coverage</div>
-          </div>
-          <div class="card-title" style="font-size:16px;margin-bottom:6px;">Active throughout the Netherlands</div>
+        <div class="card" style="padding:20px;margin-bottom:14px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="font-size:20px;">🇳🇱</span><div class="card-label" style="min-height:auto;margin-bottom:0;">Coverage</div></div>
+          <div class="card-title" style="min-height:auto;font-size:16px;margin-bottom:6px;">Active throughout the Netherlands</div>
           <div class="card-text">We work both on-site and remote. A first call is always online.</div>
         </div>
-
         <div class="card" style="padding:20px;">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
-            <span style="font-size:20px;">⏱️</span>
-            <div class="card-label" style="margin-bottom:0;">What to expect</div>
-          </div>
-          <div class="card-title" style="font-size:16px;margin-bottom:6px;">Quick response</div>
-          <div class="card-text">After your message, we'll reach out as soon as possible. We listen, ask questions and give you an honest take on whether and how we can help.</div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;"><span style="font-size:20px;">⏱️</span><div class="card-label" style="min-height:auto;margin-bottom:0;">What to expect</div></div>
+          <div class="card-title" style="min-height:auto;font-size:16px;margin-bottom:6px;">Quick response</div>
+          <div class="card-text">After your message, we&#39;ll reach out as soon as possible. We listen, ask questions and give you an honest take on whether and how we can help.</div>
         </div>
-
       </div>
     </div>
   </div>
 </section>
-
 <footer>
   <div class="wrap">
     <div class="footer-inner">
-      <span class="footer-logo"><svg width="160" height="32" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="10" width="56" height="56" rx="13" fill="#1a3a5c" stroke="#2a5a8c" stroke-width="0.5"/><rect x="14" y="36" width="28" height="20" rx="4" fill="#3b82f6"/><path d="M18 36 L18 28 Q18 20 28 20 Q38 20 38 28 L38 36" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round"/><rect x="25" y="42" width="6" height="8" rx="3" fill="#1a3a5c"/><circle cx="28" cy="44" r="2.5" fill="#93c5fd"/><text y="46" font-family="Inter,sans-serif" font-weight="800" font-size="34" x="68"><tspan fill="#3b82f6">Cloud</tspan><tspan fill="#ffffff">Fellows</tspan></text></svg></span>
+      <img src="logo-shield-final.png" alt="CloudFellows" style="height:36px;width:auto;opacity:0.7;">
       <div class="footer-links">
         <a href="services.html">Services</a>
         <a href="approach.html">Approach</a>
@@ -135,29 +89,16 @@
     </div>
   </div>
 </footer>
-
-
-<a href="contact-en.html" class="fab-contact">Contact</a>
-<script>
+<a href="contact-en.html" class="fab-contact">Contact</a><script>
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-// Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobileNav');
 if (hamburger && mobileNav) {
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    mobileNav.classList.toggle('open');
-  });
-  mobileNav.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      mobileNav.classList.remove('open');
-    });
-  });
+  hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); mobileNav.classList.toggle('open'); });
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { hamburger.classList.remove('open'); mobileNav.classList.remove('open'); }));
 }
 </script>
 </body>
